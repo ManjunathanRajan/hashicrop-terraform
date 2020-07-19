@@ -127,6 +127,3 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-providers/env-var.sh
-providers/main.tf
-providers/version.tf

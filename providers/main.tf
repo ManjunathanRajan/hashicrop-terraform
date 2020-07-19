@@ -23,3 +23,12 @@ provider "oci" {
   region           = var.region
 }
 
+provider "google" {
+  version = "3.5.0"
+
+  credentials = file("third-expanse-283701-05da17a5a0fb.json")
+
+  project = "third-expanse-283701"
+  region  = "asia-south1"
+  zone    = "asia-south1-a"
+}

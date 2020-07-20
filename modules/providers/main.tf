@@ -1,5 +1,7 @@
-provider "aws" {
-  version = ">=2.0"
-  region = var.region
+resource "aws_instance" "example" {
+  ami             = var.ami[var.region]
+  instance_type   = var.instance_type
+  tags = {
+    Name = "HelloWorld"
   }
-  
+}
